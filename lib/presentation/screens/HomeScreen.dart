@@ -8,10 +8,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Informacion"),
+        title: Text("Informacion personal"),
         actions: [
           IconButton(
-            icon: const Icon(Icons.power_settings_new), 
+            icon: Icon(Icons.power_settings_new), 
             onPressed: () {
               exit(0); 
             },
@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
               width: 120,
               height: 120,
               child: Image.network(
-                "https://splavia1.unitecnar.edu.co/pluginfile.php/344477/user/icon/eguru/f1?rev=4882673", // reemplazar con tu URL real
+                "https://www.pngkey.com/png/detail/573-5739600_handsome-squidward-png-clipart-squidward-tentacles-handsome-squidward.png", 
                 fit: BoxFit.cover,
               ),
             ),
@@ -65,16 +65,7 @@ class HomeScreen extends StatelessWidget {
             label: "Twiter",
           ),
         ],
-        onTap: (index) {
-          
-          if (index == 0) {
-            print("GitHub");
-          } else if (index == 1) {
-            print("LinkedIn");
-          } else if (index == 2) {
-            print("No tengo :,(");
-          }
-        },
+        
       ),
     );
   }
